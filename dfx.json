@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "ICP_Freelancer_backend": {
+      "main": "src/ICP_Freelancer_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICP_Freelancer_frontend": {
+      "dependencies": [
+        "ICP_Freelancer_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/ICP_Freelancer_frontend/src/index.html"
+      },
+      "source": [
+        "src/ICP_Freelancer_frontend/assets",
+        "dist/ICP_Freelancer_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
